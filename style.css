@@ -12,6 +12,17 @@ body{
         url("assets/font_familly/DM_Sans/DMSans-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'Poppins';
+    src: url("assets/font_familly/Poppins/Poppins-Black.ttf"),
+        /*url("assets/font_familly/Poppins/Poppins-Bold.ttf"),*/
+        /*url("assets/font_familly/Poppins/Poppins-Medium.ttf"),*/
+        url("assets/font_familly/Poppins/Poppins-ExtraLight.ttf"),
+        url("assets/font_familly/Poppins/Poppins-Light.ttf");
+}
+
+
+
 /*******************************************/
 
 .portofolie_section{
@@ -95,14 +106,27 @@ body{
     padding: 5px;
 }
 
+.section_acceuil{
+    height: 100vh;
+}
+
 .section_acceuil .section_salutation .mon_profil .picture_profil{
     height: 100%;
     border-radius: 200px;
     background: #191919;
-    /*border-top: 5px solid #e70faa;*/
-    /*border-bottom: 5px solid  #01bffd;*/
-    /*border-left: 5px solid #7467d3;*/
-    /*border-right: 5px solid #6f6bd5;*/
-    /*border: linear-gradient;*/
+}
+
+.section_acceuil .section_salutation{
+    display: flex;
+    justify-content: space-between;
+    height: 80%;
+    align-items: center;
+}
+
+.section_acceuil .section_salutation .salutation_items .titre_salutation{
+    font-size: 40px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    color: #D9D9D9;
 }
 
