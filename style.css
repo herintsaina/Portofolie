@@ -37,6 +37,7 @@ body{
 .section_acceuil .menu_portofolie{
     display: flex;
     justify-content: space-between;
+    height: 20%;
 }
 
 .section_acceuil .menu_portofolie .mon_logo{
@@ -46,12 +47,13 @@ body{
 
 .section_acceuil .menu_portofolie .mon_logo .picture{
     width: 160px;
-    /*height: 59px;*/
+    position: relative;
+    top: 4px;
 }
 
 .section_acceuil .menu_portofolie .menu_content{
     display: flex;
-    height: 59px;
+    height: 100%;
     align-items: center;
     gap: 51px;
 }
@@ -87,9 +89,23 @@ body{
     gap: 20px;
 }
 
-.portofolie_container .menu_portofolie .menu_content .icons_menu .link_icons img{
+.portofolie_container .menu_portofolie .menu_content .icons_menu .link_icons:hover .logo-griss{
+    display: none;
+}
+
+.portofolie_container .menu_portofolie .menu_content .icons_menu .link_icons:hover .logo-blanch{
+    display: block;
+}
+
+.portofolie_container .menu_portofolie .menu_content .icons_menu .link_icons .logo-griss{
     width: 30px;
     height: 30px;
+}
+
+.portofolie_container .menu_portofolie .menu_content .icons_menu .link_icons .logo-blanch{
+    width: 30px;
+    height: 30px;
+    display: none;
 }
 
 .portofolie_container .menu_portofolie .menu_content .icons_menu .link_icons{
@@ -99,11 +115,11 @@ body{
 /****************************************************************************/
 
 .section_acceuil .section_salutation .mon_profil{
-    height: 300px;
+    height: 400px;
     background: linear-gradient(to bottom , #e70faa ,#01bffd);
     border-radius: 200px;
-    width: 300px;
-    padding: 5px;
+    width: 400px;
+    padding: 3px;
 }
 
 .section_acceuil{
