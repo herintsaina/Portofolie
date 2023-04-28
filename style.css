@@ -164,3 +164,20 @@ body{
     /*font-size: 20vw;*/
 }
 
+/****************** SECTION ABOUT ***************************/
+
+.section_about .items_about .titre_work{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.4px;
+    /*text-align: center;*/
+    color: #CCCCCC;
+}
+
+.section_about .items_about .description_apropos_moi{
+    font-family: 'DM Sans',sans-serif;
+    /*font-weight: 400;*/
+    font-size: 18px;
+    color: #fff;
+}
