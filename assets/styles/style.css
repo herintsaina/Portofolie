@@ -15,17 +15,17 @@ p {
 
 /* Font Familly  */
 /* // 'Poppins' */
-/* @font-face {
+@font-face {
     font-family: 'Poppins';
-    src: url('/assets/fonts/Poppins/Poppins-Thin.ttf'),
+    src:url('/assets/fonts/Poppins/Poppins-Light.ttf'),
         url('/assets/fonts/Poppins/Poppins-ExtraLight.ttf'),
-        url('/assets/fonts/Poppins/Poppins-Light.ttf'),
+        url('/assets/fonts/Poppins/Poppins-Thin.ttf'),
         url('/assets/fonts/Poppins/Poppins-Regular.ttf'),
         url('/assets/fonts/Poppins/Poppins-Medium.ttf'),
         url('/assets/fonts/Poppins/Poppins-SemiBold.ttf'),
         url('/assets/fonts/Poppins/Poppins-Bold.ttf'),
         url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
-} */
+}
 
 
 /*** 'DM Sans' */
@@ -703,7 +703,19 @@ p {
     }
 }
 
+@media (min-width:640px) {
+    #menu label .menu{
+        right: 0;
+    }
+}
+
 @media (min-width:768px) {
+    /*** Hamburger ***/
+
+    label .menu{
+        right: -100px;
+    }
+
     /*** PROJECT **/
 
     .content-project {
@@ -917,9 +929,34 @@ p {
         width: 86%;
     }
 
+    .items-icons {
+        display: flex;
+    }
+
     /**** Project ****/
 
     .content-project {}
+}
+
+@media (min-width:1366px) {
+    /*** Header ****/
+
+    .liste-link a{
+        font-size: 15px;
+    }
+
+    .items-icons img {
+        height: 25px;
+    }
+
+    .logo {
+        height: 45px;
+    }
+
+    .header-portofolio{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 }
 
 @media (min-width:1440px) {
@@ -929,8 +966,25 @@ p {
         width: 87%;
     }
 
+    .liste-link a{
+        font-size: 20px;
+    }
+
     .items-icons {
         display: flex;
+    }
+
+    .items-icons img {
+        height: 30px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
+    .header-portofolio{
+        padding-top: 40px;
+        padding-bottom: 40px;
     }
 
     /**** PROJECT ***/
