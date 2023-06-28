@@ -17,14 +17,14 @@ p {
 /* // 'Poppins' */
 @font-face {
     font-family: 'Poppins';
-    src:url('../assets/fonts/Poppins/Poppins-Light.ttf'),
-        url('../assets/fonts/Poppins/Poppins-ExtraLight.ttf'),
-        url('../assets/fonts/Poppins/Poppins-Thin.ttf'),
-        url('../assets/fonts/Poppins/Poppins-Regular.ttf'),
-        url('../assets/fonts/Poppins/Poppins-Medium.ttf'),
-        url('../assets/fonts/Poppins/Poppins-SemiBold.ttf'),
-        url('../assets/fonts/Poppins/Poppins-Bold.ttf'),
-        url('../assets/fonts/Poppins/Poppins-ExtraBold.ttf');
+    src:url('/assets/fonts/Poppins/Poppins-Light.ttf'),
+        url('/assets/fonts/Poppins/Poppins-ExtraLight.ttf'),
+        url('/assets/fonts/Poppins/Poppins-Thin.ttf'),
+        url('/assets/fonts/Poppins/Poppins-Regular.ttf'),
+        url('/assets/fonts/Poppins/Poppins-Medium.ttf'),
+        url('/assets/fonts/Poppins/Poppins-SemiBold.ttf'),
+        url('/assets/fonts/Poppins/Poppins-Bold.ttf'),
+        url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf');
 }
 
 
@@ -32,10 +32,10 @@ p {
 
 @font-face {
     font-family: 'DM Sans';
-    src: url('../assets/fonts/DM_Sans/DMSans-Bold.ttf'),
-        url('../assets/fonts/DM_Sans/DMSans-Medium.ttf'),
-        url('../assets/fonts/DM_Sans/DMSans-Regular.ttf'),
-        url('../assets/fonts/DM_Sans/DMSans-Light.ttf');
+    src: url('/assets/fonts/DM_Sans/DMSans-Bold.ttf'),
+        url('/assets/fonts/DM_Sans/DMSans-Medium.ttf'),
+        url('/assets/fonts/DM_Sans/DMSans-Regular.ttf'),
+        url('/assets/fonts/DM_Sans/DMSans-Light.ttf');
 }
 
 
@@ -567,7 +567,7 @@ p {
 
 @media (min-width:320px) {
     .header-portofolio {
-        width: 82%;
+        width: 85%;
     }
 
     .menu-portofolio ul {
@@ -698,7 +698,46 @@ p {
 
     /****hamburger****/
 
-    label .menu {
+    #menu label .menu {
+        right: -75px;
+    }
+
+    #menu label input:checked+.menu {
+        height: 120vh;
+        width: 125%;
+    }    
+}
+
+@media (min-width:375px) {
+    #menu label .menu{
+        right: -85px;
+    }
+}
+
+@media (min-width:425px) {
+    #menu label .menu {
+        right: -30px;
+    }
+
+    #menu label input:checked+.menu {
+        height: 48vh;
+        width: 110%;
+    }
+
+    .items__title h1 {
+        font-size: 38px;
+        line-height: 45px;
+    }
+    
+
+}
+
+@media (min-height:654px) {
+    .items__title {
+        margin-top: 60px;
+    }
+
+    label .menu{
         right: -100px;
     }
 }
@@ -707,6 +746,10 @@ p {
     #menu label .menu{
         right: 0;
     }
+
+    .items__title {
+        margin-top: 0px;
+    }
 }
 
 @media (min-width:768px) {
@@ -714,6 +757,16 @@ p {
 
     label .menu{
         right: -100px;
+    }
+
+    #menu label ul {
+        top: 40%;
+        left: 40%;
+    }
+
+    #menu label input:checked+.menu {
+        height: 45vh;
+        width: 100%;
     }
 
     /*** PROJECT **/
@@ -957,6 +1010,14 @@ p {
         padding-top: 30px;
         padding-bottom: 30px;
     }
+
+    .icons-tech {
+        width: 100px;
+    }
+
+    .content-tech {
+        justify-content: space-between;
+    }
 }
 
 @media (min-width:1440px) {
@@ -994,7 +1055,11 @@ p {
     }
 
     .content-tech {
-        justify-content: space-between;
+        /* justify-content: space-between; */
+    }
+
+    .icons-tech {
+        width: 120px;
     }
 }
 
@@ -1132,16 +1197,19 @@ label .menu {
     transition: .5s ease-in-out;
     box-shadow: 0 0 0 0 #363636, 0 0 0 0 #363636;
     cursor: pointer;
-
 }
 
 label .hamburger {
-    position: absolute;
+    /* position: absolute;
     top: 155px;
-    left: 50px;
+    left: 50px; */
+    position: fixed;
+    top: 50px;
+    left: 90%;
     width: 30px;
-    height: 2px;
+    height: 3px;
     background: #fff;
+    border-radius: 10px;
     display: block;
     -webkit-transform-origin: center;
     transform-origin: center;
@@ -1174,7 +1242,10 @@ label input {
 }
 
 label input:checked+.menu {
-    box-shadow: 0 0 0 100vw #363636, 0 0 0 100vh #363636;
+    /* box-shadow: 0 0 0 100vw #363636, 0 0 0 100vh #363636;  */
+    /* box-shadow: 0 0 0 500px #363636;*/
+    height: 48vh;
+    width: 110%;
     border-radius: 0;
     background: #363636;
 }
@@ -1210,9 +1281,16 @@ label ul {
     left: 35%;
     /* -webkit-transform: translate(-50%, -50%); */
     /* transform: translate(-50%, -50%); */
+    list-style: none;
     opacity: 0;
     -webkit-transition: .25s 0s ease-in-out;
     transition: .25s 0s ease-in-out;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Poppins';
+    font-weight: 700;
 }
 
 label a {

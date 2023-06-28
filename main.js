@@ -6,7 +6,12 @@ function menuScroll() {
 
     if (scrollPosition > 100) {
         document.getElementById('menu').classList.add('menu-scroll');
-    }else {
+    } else {
         document.getElementById('menu').classList.remove('menu-scroll');
     }
+}
+
+function checkedMenu() {
+    location.reload();
+
 }
