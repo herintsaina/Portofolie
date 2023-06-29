@@ -1018,6 +1018,20 @@ p {
     .content-tech {
         justify-content: space-between;
     }
+
+    .items-project {
+        width: 30%;
+    }
+}
+
+@media (min-height:612px) {
+    .container-information {
+        height: 100%;
+    }
+
+    .home__content{
+        margin-top: 50px;
+    }
 }
 
 @media (min-width:1440px) {
