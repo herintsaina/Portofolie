@@ -720,7 +720,7 @@ p {
     }
 
     #menu label input:checked+.menu {
-        height: 48vh;
+        height: 52vh;
         width: 110%;
     }
 
@@ -765,7 +765,7 @@ p {
     }
 
     #menu label input:checked+.menu {
-        height: 45vh;
+        height: 50vh;
         width: 100%;
     }
 
@@ -788,6 +788,7 @@ p {
 
     .home__content {
         gap: 50px;
+        justify-content: center;
     }
 
     /*** CONTACT ***/
@@ -858,6 +859,7 @@ p {
 
     .home__content {
         flex-wrap: nowrap;
+        justify-content: space-between;
     }
 
     .content-about {
